@@ -1,0 +1,256 @@
+body {
+    font-size: 50.5%;
+}
+
+#contact-info {
+    font-size: 6em;
+    padding-left: 1em;
+}
+
+.fixed {
+    -webkit-transform: translateZ(0);
+}
+
+.name a {
+    font-family: 'Poiret One'
+}
+
+.fa {
+    color: rgba(0, 0, 0, 0.81);
+}
+
+.fa-envelope:hover {
+    color: rgba(255, 255, 255, 0.79);
+    transition: .6s;
+}
+
+.fa-envelope {
+    -webkit-transition: .8s;
+}
+
+.fa-github-square:hover {
+    color: #800080;
+    transition: .6s;
+}
+
+.fa-github-square {
+    -webkit-transition: 1s;
+}
+
+.fa-linkedin-square {
+    -webkit-transition: 1s;
+}
+
+.fa-linkedin-square:hover {
+    -webkit-transition: .6s;
+    color: #0077B5;
+}
+
+.fa-twitter-square {
+    -webkit-transition: 1s;
+}
+
+.fa-twitter-square:hover {
+    -webkit-transition: .6s;
+    color: #55ACEE;
+}
+
+header h1,
+h2 {
+    font-family: 'Poiret One';
+    font-weight: bold;
+}
+
+header {
+    background: url('img/header-min.jpg') no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a.li-nav {
+    font-family: 'Raleway' !important;
+    font-size: .85em !important;
+    font-weight: bold !important;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+    padding-top: .75em;
+    color: rgba(255, 255, 255, 0.29) !important;
+}
+
+.home {
+    padding-left: 1em;
+    padding-top: .23em;
+    color: rgba(255, 255, 255, 0.29);
+}
+
+.code {
+    font-family: courier;
+    font-size: .56em;
+}
+
+.about-p {
+    text-align: left;
+    margin: 3vw 11vw;
+}
+
+.top-bar-section ul li>a:hover {
+    color: #8181ef !important;
+}
+
+a.active {
+    color: #8181ef !important;
+}
+
+.top-bar.expanded {
+    background: #333;
+}
+
+.top-bar-section ul {
+    text-align: center;
+    padding-right: 1em;
+}
+
+header h1 {
+    font-size: 11em;
+    margin-top: 1.3em;
+}
+
+img.logo {
+    height: 50px;
+    width: 70px;
+}
+
+h3 {
+    font-size: 4em;
+    letter-spacing: .039em
+}
+
+@media only screen and (max-width: 40em) {
+    header h1 {
+        font-size: 9em;
+        margin-top: 1.875em;
+    }
+}
+
+header h2 {
+    font-size: 3.405em;
+    padding-bottom: 10vh;
+}
+
+header .fa {
+    font-size: 5.4em;
+}
+
+.email {
+    padding-top: .3em;
+    font-size: 3em;
+    margin-left: 1em;
+}
+
+section#bg-exp {
+    background: url('img/light_alu.png');
+    height: auto;
+}
+
+section#about {
+    height: auto;
+    background: url('img/mooning.png');
+}
+
+section#contact {
+    background: url('img/ticks.png');
+}
+
+#bg-exp li {
+    font-size: 1.09em;
+}
+
+section h2 {
+    font-size: 8.5em;
+    padding-bottom: 1%;
+    letter-spacing: .08em
+}
+
+section#contact h2 {
+    margin-bottom: 1em
+}
+
+p {
+    font-family: 'Raleway';
+    font-size: 2.2em;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+.desc {
+    font-size: 1em;
+    font-family: 'Raleway';
+    margin-top: 1.1em;
+    margin-bottom: 2em;
+}
+
+#about {
+    background: url('img/mooning.png');
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-right: 1em;
+}
+
+.my-pic img {
+    border-radius: 100%;
+    margin-bottom: 3em;
+}
+
+.basic-info {
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+/*_____________________________ */
+
+#progressbar {
+    background: rgba(0, 0, 0, 0.47);
+    height: 1.3em;
+    border-radius: 5px;
+}
+
+#progressbar-txt {
+    background-color: #0063C6;
+    height: 1.2em;
+    padding-bottom: 1.3em;
+    border-radius: 5px;
+    display: block;
+    animation: loadbar 2s normal forwards ease-in-out;
+    -webkit-animation: loadbar 2s normal forwards ease-in-out;
+}
+
+#progressbar-txt p {
+    font-size: 1em;
+    padding-left: 5em;
+}
+
+@keyframes loadbar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@-webkit-keyframes loadbar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
