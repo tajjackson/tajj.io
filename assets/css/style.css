@@ -1,80 +1,29 @@
+/* Globals */
+
 body {
     font-size: 50.5%;
+    overflow-x: hidden;
 }
 
-#contact-info {
-    font-size: 6em;
-    padding-left: 1em;
+p,
+li,
+h3 {
+    font-family: 'Raleway';
 }
 
-.fixed {
-    -webkit-transform: translateZ(0);
-}
-
-.name a {
-    font-family: 'Poiret One'
-}
-
-.fa {
-    color: rgba(0, 0, 0, 0.81);
-}
-
-.fa-envelope:hover {
-    color: rgba(255, 255, 255, 0.79);
-    transition: .6s;
-}
-
-.fa-envelope {
-    -webkit-transition: .8s;
-}
-
-.fa-github-square:hover {
-    color: #800080;
-    transition: .6s;
-}
-
-.fa-github-square {
-    -webkit-transition: 1s;
-}
-
-.fa-linkedin-square {
-    -webkit-transition: 1s;
-}
-
-.fa-linkedin-square:hover {
-    -webkit-transition: .6s;
-    color: #0077B5;
-}
-
-.fa-twitter-square {
-    -webkit-transition: 1s;
-}
-
-.fa-twitter-square:hover {
-    -webkit-transition: .6s;
-    color: #55ACEE;
-}
-
-header h1,
-h2 {
-    font-family: 'Poiret One';
+h3 {
+    font-size: 4.1em;
+    letter-spacing: .074em;
     font-weight: bold;
 }
 
-header {
-    background: url('img/header-min.jpg') no-repeat center center fixed;
-    height: 100vh;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+li {
+    list-style-type: none;
 }
+/* ************ End Globals *********** */
+/* Navbar */
 
-a.li-nav {
+.li-nav {
     font-family: 'Raleway' !important;
     font-size: .85em !important;
     font-weight: bold !important;
@@ -88,17 +37,7 @@ a.li-nav {
 .home {
     padding-left: 1em;
     padding-top: .23em;
-    color: rgba(255, 255, 255, 0.29);
-}
-
-.code {
-    font-family: courier;
-    font-size: .56em;
-}
-
-.about-p {
-    text-align: left;
-    margin: 3vw 11vw;
+    color: rgba(255, 255, 255, 0.29) !important;
 }
 
 .top-bar-section ul li>a:hover {
@@ -115,45 +54,98 @@ a.active {
 
 .top-bar-section ul {
     text-align: center;
-    padding-right: 1em;
+}
+
+.fa-bars {
+    font-size: 1.8em !important;
+}
+/* ********** End Navbar ********* */
+/* Header */
+
+header h1,
+h2 {
+    font-family: 'Poiret One';
+    font-weight: bold;
+}
+
+header {
+    background: url('img/header-min.jpg') no-repeat center center fixed;
+    height: 100%;
+    background-size: cover;
 }
 
 header h1 {
     font-size: 11em;
-    margin-top: 1.3em;
-}
-
-img.logo {
-    height: 50px;
-    width: 70px;
-}
-
-h3 {
-    font-size: 4em;
-    letter-spacing: .039em
-}
-
-@media only screen and (max-width: 40em) {
-    header h1 {
-        font-size: 9em;
-        margin-top: 1.875em;
-    }
+    margin-top: 17.6vh;
 }
 
 header h2 {
     font-size: 3.405em;
-    padding-bottom: 10vh;
+    padding-bottom: 9vh;
 }
 
 header .fa {
     font-size: 5.4em;
 }
 
-.email {
-    padding-top: .3em;
-    font-size: 3em;
-    margin-left: 1em;
+.code {
+    font-family: courier;
+    font-size: .56em;
 }
+
+.contact-icon {
+    padding-left: 1em;
+}
+
+.fixed {
+    transform: translateZ(0);
+}
+
+.name a {
+    font-family: 'Poiret One';
+}
+/* Font Awesome */
+
+.fa {
+    color: rgba(0, 0, 0, 0.81);
+}
+
+.fa-envelope:hover {
+    transition: .6s;
+    color: rgba(255, 255, 255, 0.79);
+}
+
+.fa-envelope {
+    transition: .6s;
+}
+
+.fa-github-square:hover {
+    transition: .6s;
+    color: #800080;
+}
+
+.fa-github-square {
+    transition: .6s;
+}
+
+.fa-linkedin-square {
+    transition: .6s;
+}
+
+.fa-linkedin-square:hover {
+    transition: .6s;
+    color: #0077B5;
+}
+
+.fa-twitter-square {
+    transition: .6s;
+}
+
+.fa-twitter-square:hover {
+    color: #55ACEE;
+}
+/* ********** End Header ********** */
+/* Section Styles */
 
 section#bg-exp {
     background: url('img/light_alu.png');
@@ -161,44 +153,37 @@ section#bg-exp {
 }
 
 section#about {
-    height: auto;
     background: url('img/mooning.png');
+    height: auto;
 }
 
 section#contact {
     background: url('img/ticks.png');
+    height: auto;
 }
 
-#bg-exp li {
-    font-size: 1.09em;
-}
-
-section h2 {
+section#bg-exp h2,
+section#about h2 {
     font-size: 8.5em;
     padding-bottom: 1%;
     letter-spacing: .08em
 }
 
-section#contact h2 {
-    margin-bottom: 1em
+section#bg-exp p,
+section#about p,
+section#contact p {
+    font-size: 2.1em;
+}
+/* ********** End Section Styles ********** */
+/* Experience Section */
+
+.personal-statement p {
+    font-size: 2em;
 }
 
-p {
-    font-family: 'Raleway';
-    font-size: 2.2em;
-    word-spacing: 3px;
-    text-align: center;
-}
-
-.desc {
-    font-size: 1em;
-    font-family: 'Raleway';
-    margin-top: 1.1em;
-    margin-bottom: 2em;
-}
-
-#about {
-    background: url('img/mooning.png');
+#bg-exp li {
+    font-size: 1.1em;
+    letter-spacing: .05em
 }
 
 .skills ul {
@@ -206,51 +191,94 @@ p {
     padding-right: 1em;
 }
 
+.desc {
+    font-size: 2em;
+    font-family: 'Raleway';
+    margin-top: 1.1em;
+    margin-bottom: 2em;
+}
+
+.thumb {
+    line-height: 0;
+    display: inline-block;
+    border: solid 4px #fff;
+    max-width: 100%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-out;
+}
+/* ********** End Experience Section ********** */
+/* About Section */
+
 .my-pic img {
     border-radius: 100%;
     margin-bottom: 3em;
 }
 
-.basic-info {
-    margin-right: 10vw;
-    margin-left: 10vw;
+.about-p p {
+    text-align: left;
 }
-/*_____________________________ */
+/* ********** End About Section ********** */
+/* Contact Section */
 
-#progressbar {
-    background: rgba(0, 0, 0, 0.47);
-    height: 1.3em;
-    border-radius: 5px;
-}
-
-#progressbar-txt {
-    background-color: #0063C6;
-    height: 1.2em;
-    padding-bottom: 1.3em;
-    border-radius: 5px;
-    display: block;
-    animation: loadbar 2s normal forwards ease-in-out;
-    -webkit-animation: loadbar 2s normal forwards ease-in-out;
+section#contact h2 {
+    font-size: 8.5em;
+    margin-bottom: .5em;
+    letter-spacing: .08em;
 }
 
-#progressbar-txt p {
-    font-size: 1em;
-    padding-left: 5em;
+.email-p {
+    padding-right: 6vw;
+    word-spacing: -1px
 }
 
-@keyframes loadbar {
-    0% {
-        width: 0%;
+.email {
+    font-size: 1.5em;
+    color: black;
+}
+/* ********** End Contact Section ********** */
+/* Footer */
+
+footer p {
+    font-family: Helvetica;
+    font-size: 1.9em;
+    word-spacing: .022em;
+}
+/* ********** End Footer ********** */
+/* Media Queries */
+
+@media only screen and (max-width: 40em) {
+    header h1 {
+        font-size: 7em;
+        margin-top: 22vh;
     }
-    100% {
-        width: 80%;
+    header h2 {
+        font-size: 3em;
+        padding-bottom: 9vh;
+    }
+    section#bg-exp h2,
+    section#about h2,
+    section#contact h2 {
+        font-size: 6.5em;
+        letter-spacing: 0.06em
+    }
+    h3 {
+        font-size: 3.8em;
+    }
+    .personal-statement p {
+        font-size: 1.77em;
+    }
+    header .fa {
+        font-size: 5em !important;
+        padding-left: .1em
+    }
+    .email-p {
+        padding-right: 2em
     }
 }
 
-@-webkit-keyframes loadbar {
-    0% {
-        width: 0%;
+@media only screen and (min-width: 64.063em) {
+    .email-p {
+        padding-left: 3vw;
     }
-    100% {
-        width: 80%;
-    }
+}
+/* ********** End Media Queries ********** */
