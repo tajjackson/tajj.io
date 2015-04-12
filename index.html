@@ -28,12 +28,13 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
     <!-- Modernizr for accessibility -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script>
-    var bg = jQuery("header");
-jQuery(window).resize("resizeBackground");
-function resizeBackground() {
-    bg.height(jQuery(window).height() + 60);
-}
-resizeBackground();
+        var bg = jQuery("#top");
+        jQuery(window).resize("resizeBackground");
+
+        function resizeBackground() {
+            bg.height(jQuery(window).height() + 60);
+        }
+        resizeBackground();
     </script>
 </head>
 
