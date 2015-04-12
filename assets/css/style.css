@@ -72,7 +72,7 @@ h2 {
     font-weight: bold;
 }
 
-header {
+#top {
     background: url('img/header-min.jpg') no-repeat center center fixed;
     height: 100%;
     -webkit-background-size: 100%;
