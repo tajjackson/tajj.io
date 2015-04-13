@@ -1,8 +1,11 @@
 /* Globals */
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-size: 50.5%;
-    overflow-x: hidden;
 }
 
 p,
