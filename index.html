@@ -27,16 +27,6 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Modernizr for accessibility -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-        var bg = jQuery("#top");
-        jQuery(window).resize("resizeBackground");
-
-        function resizeBackground() {
-            bg.height(jQuery(window).height() + 60);
-        }
-        resizeBackground();
-    </script>
 </head>
 
 <body>
@@ -218,6 +208,30 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
     </footer>
 
     <!-- Foundation js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    function top() {
+    var HEIGHT_CHANGE_TOLERANCE = 100;
+
+    var top = $(this);
+    var viewportHeight = $(window).height();
+
+    $(window).resize(function () {
+        if (Math.abs(viewportHeight - $(window).height()) > HEIGHT_CHANGE_TOLERANCE) {
+            viewportHeight = $(window).height();
+            update();
+        }
+    });
+
+    function update() {
+        top.css('height', viewportHeight + 'px');
+    }
+
+    update();
+}
+
+$('#top').each(top);
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.0/wow.min.js"></script>
     <script>
         new WOW().init();
