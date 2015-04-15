@@ -12,7 +12,7 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
     <meta charset="UTF-8" />
     <title>Taj Jackson | Web Developer</title>
     <meta name="description" content="Freelance Web Developer based in the DC Metro Area.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Google Fonts / F.A. -->
@@ -45,6 +45,10 @@ padding-bottom: 9vh;
 }
 header .fa {
 font-size: 5.4em;
+}
+nav.top-bar {
+    margin-right: 0;
+    margin-left: 0;
 }
 @media only screen and (max-width: 40em) {
     header h1 {
@@ -87,7 +91,7 @@ font-size: 5.4em;
 <body>
 
     <!-- Navbar -->
-    <div class="fixed" style="width: 100%;">
+    <div class="fixed">
         <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop:false;">
             <ul class="title-area">
                 <li class="left">
@@ -117,7 +121,6 @@ font-size: 5.4em;
     <!-- END Navbar -->
 
     <!-- Opening banner -->
-    <div class="wrapper" style="width: 100%;">
     <header id="top">
         <div class="row">
             <div class="large-12 large-centered column text-center">
@@ -262,7 +265,6 @@ font-size: 5.4em;
             </div>
         </div>
     </footer>
-    </div>
 
     <!-- For animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.0/wow.min.js"></script>
