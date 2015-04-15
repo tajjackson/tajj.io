@@ -23,24 +23,13 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
     <!-- Modernizr for accessibility -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-    var bg = jQuery("#top");
-jQuery(window).resize("resizeBackground");
-function resizeBackground() {
-    bg.height(jQuery(window).height() + 60);
-}
-resizeBackground();
-   </script>
     <style>
-         .wow {
-        }
+        .wow {
    visibility: hidden;
 }
         body {
     font-size: 50.5%;
     overflow-x: hidden;
-    width: 100%;
-    max-width: 100%;
 }
         header {
 background: url('assets/css/img/header-min.jpg') no-repeat center center fixed;
@@ -57,10 +46,6 @@ padding-bottom: 9vh;
 }
 header .fa {
 font-size: 5.4em;
-}
-nav {
-    width: 100%;
-    max-width: 100%;
 }
 
 @media only screen and (max-width: 40em) {
