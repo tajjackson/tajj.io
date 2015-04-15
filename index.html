@@ -22,7 +22,17 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Modernizr for accessibility -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script>   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    {
+        $('body').addClass('noanimated'); // to remove transition
+    }</script>
     <style>
+        .noanimated {
+    -webkit-animation-duration: none;
+            animation-duration: none;
+    -webkit-animation-fill-mode: none;
+            animation-fill-mode: none;
+}
         .wow {
    visibility: hidden;
 }
