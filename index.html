@@ -28,6 +28,7 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
 }
         body {
     font-size: 50.5%;
+    overflow: hidden;
 }
         header {
 background: url('assets/css/img/header-min.jpg') no-repeat center center fixed;
@@ -46,7 +47,10 @@ header .fa {
 font-size: 5.4em;
 }
 @media only screen and (max-width: 40em) {
-    header h1 {
+    .top-bar {
+        overflow: hidden;
+    }
+    }header h1 {
         font-size: 7em;
         margin-top: 22vh;
     }
@@ -87,7 +91,7 @@ font-size: 5.4em;
 
     <!-- Navbar -->
     <div class="fixed">
-        <nav class="top-bar row" data-topbar role="navigation" data-options="scrolltop:false;">
+        <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop:false;">
             <ul class="title-area">
                 <li class="left">
                     <a href="#top"><i class="wow home fa fa-home fa-2x animated fadeIn" data-wow-delay="1.6s"></i></a>
