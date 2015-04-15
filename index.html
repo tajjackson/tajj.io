@@ -24,32 +24,29 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
-    var bg = jQuery("header");
+    var bg = jQuery("#top");
 jQuery(window).resize("resizeBackground");
 function resizeBackground() {
-    bg.height(jQuery(window).height());
+    bg.height(jQuery(window).height() + 60);
 }
 resizeBackground();
    </script>
     <style>
-        .noanimated {
-    -webkit-animation-duration: none;
-            animation-duration: none;
-    -webkit-animation-fill-mode: none;
-            animation-fill-mode: none;
-}
+
         .wow {
    visibility: hidden;
 }
+        html, body, nav, .top-bar {
+            width: 100vw;
+            max-width: 100vw
+        }
         body {
     font-size: 50.5%;
     overflow-x: hidden;
-    width: 100%;
-    max-width: 100%;
 }
-        header {
+        #top {
 background: url('assets/css/img/header-min.jpg') no-repeat center center fixed;
-height: 100%;
+height: 100vh;
 background-size: cover;
 }
 header h1 {
