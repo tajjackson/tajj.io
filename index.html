@@ -24,21 +24,20 @@ I wasn't supposed to put this much effort into it, but I really wanted to showca
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
-    var bg = jQuery("header");
+    var bg = jQuery("#top");
 jQuery(window).resize("resizeBackground");
 function resizeBackground() {
-    bg.height(jQuery(window).height());
+    bg.height(jQuery(window).height() + 60);
 }
 resizeBackground();
    </script>
     <style>
-        .noanimated {
-    -webkit-animation-duration: none;
-            animation-duration: none;
-    -webkit-animation-fill-mode: none;
-            animation-fill-mode: none;
-}
-        .wow {
+        html, nav {
+            width: 100%;
+    max-width: 100%
+        }
+         .wow {
+        }
    visibility: hidden;
 }
         body {
