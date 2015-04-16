@@ -32,6 +32,12 @@ h3 {
 li {
     list-style-type: none;
 }
+.noanimated {
+    -webkit-animation-duration: none;
+            animation-duration: none;
+    -webkit-animation-fill-mode: none;
+            animation-fill-mode: none;
+}
 /* ************ End Globals *********** */
 /* Navbar */
 
@@ -254,10 +260,6 @@ footer p {
 @media only screen and (max-width: 40em) {
     .top-bar {
         overflow-x: hidden;
-    }
-    .animated-m {
-     animation-duration: 1s;
-     animation-fill-mode: both;
     }
     header h1 {
         font-size: 7em;
