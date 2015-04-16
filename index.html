@@ -43,10 +43,10 @@ background-size: cover;
         <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop:false;">
             <ul class="title-area">
                 <li class="left">
-                    <a href="#top"><i class="wow home fa fa-home fa-2x animated fadeIn" data-wow-delay="1.6s"></i></a>
+                    <a href="#top"><i class="wow home fa fa-home fa-2x animated animated-m fadeIn" data-wow-delay="1.6s"></i></a>
                 </li>
                 <li class="toggle-topbar menu-icon">
-                    <a href="#" class="wow animated fadeIn fa fa-bars" data-wow-delay="1.7s"></a>
+                    <a href="#" class="wow animated animated-m fadeIn fa fa-bars" data-wow-delay="1.7s"></a>
                 </li>
             </ul>
 
@@ -72,28 +72,28 @@ background-size: cover;
     <header id="top">
         <div class="row">
             <div class="large-12 large-centered column text-center">
-                <h1 class="wow animated fadeInUp" data-wow-delay=".3s">Taj Jackson</h1>
-                <h2 class="wow animated fadeInUp" data-wow-delay=".9s"><span class="code">&lt;h2&gt;</span>Web Developer<span class="code">&lt;/h2&gt;</span></h2>
+                <h1 class="wow animated animated-m fadeInUp" data-wow-delay=".3s">Taj Jackson</h1>
+                <h2 class="wow animated animated-m fadeInUp" data-wow-delay=".9s"><span class="code">&lt;h2&gt;</span>Web Developer<span class="code">&lt;/h2&gt;</span></h2>
             </div>
         </div>
 
         <!-- Contact buttons -->
         <div class="row">
             <div class="small-10 small-offset-1 medium-9 medium-offset-2 large-7 large-offset-3">
-                <div class="wow animated fadeInUp small-3 column" data-wow-delay="1.5s">
+                <div class="wow animated animated-m fadeInUp small-3 column" data-wow-delay="1.5s">
                     <a href="mailto:me@tajj.io?subject=Feedback on Your Website"><i class="fa fa-envelope"></i></a>
                 </div>
 
-                <div class="wow animated fadeInUp small-3 column" data-wow-delay="1.6s">
+                <div class="wow animated animated-m fadeInUp small-3 column" data-wow-delay="1.6s">
                     <a href="https://github.com/tajjackson" target="_blank"><i class="fa fa-github-square"></i></a>
                 </div>
 
-                <div class="wow animated fadeInUp small-3 column" data-wow-delay="1.7s">
+                <div class="wow animated animated-m fadeInUp small-3 column" data-wow-delay="1.7s">
                     <a href="http://linkedin.com/in/tajjackson" target="_blank"> <i class="fa fa-linkedin-square"></i>
                     </a>
                 </div>
 
-                <div class="wow animated fadeInUp small-3 column left" data-wow-delay="1.8s">
+                <div class="wow animated animated-m fadeInUp small-3 column left" data-wow-delay="1.8s">
                     <a href="https://twitter.com/Taj_L_Jackson" target="_blank"><i class="fa fa-twitter-square"></i></a>
                 </div>
             </div>
@@ -220,6 +220,11 @@ background-size: cover;
         new WOW().init();
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+    {
+        $('body').removeClass('animated'); // to remove transition
+    }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
     <script>
         $(function () {
