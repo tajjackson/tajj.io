@@ -86,7 +86,7 @@ margin-bottom: 0.2em;
 }
 header h2 {
 font-size: 3.405em;
-margin-bottom: 3.3em;
+margin-bottom: 3.46em;
 }
 
 header .fa {
@@ -170,7 +170,7 @@ section#bg-exp h2,
 section#about h2 {
     font-size: 8.5em;
     padding-bottom: 1%;
-    letter-spacing: .08em
+    letter-spacing: .08em;
 }
 
 section#bg-exp p,
@@ -187,7 +187,7 @@ section#contact p {
 
 #bg-exp li {
     font-size: 1.1em;
-    letter-spacing: .05em
+    letter-spacing: .05em;
 }
 
 .skills ul {
@@ -232,7 +232,7 @@ section#contact h2 {
 
 .email-p {
     padding-right: 6vw;
-    word-spacing: -1px
+    word-spacing: -1px;
 }
 
 .email {
@@ -249,17 +249,19 @@ footer p {
 }
 /* ********** End Footer ********** */
 /* Media Queries */
+
+/* Small Screens */
 @media only screen and (max-width: 40em) {
     .top-bar {
         overflow-x: hidden;
     }
     header h1 {
         font-size: 7em;
-        margin-top: 22vh;
+        margin-top: 2.2em;
     }
     header h2 {
         font-size: 3em;
-        padding-bottom: 9vh;
+        margin-bottom: 2.3em;
     }
     section#bg-exp h2,
     section#about h2,
@@ -275,16 +277,25 @@ footer p {
     }
     header .fa {
         font-size: 5em !important;
-        padding-left: .1em
+        padding-left: .1em;
     }
     .email-p {
-        padding-right: 2em
+        padding-right: 2em;
     }
 }
-
+/* Large Screens */
 @media only screen and (min-width: 64.063em) {
     .email-p {
         padding-left: 3vw;
+    }
+    .header h1 {
+      font-size: 13em;
+      margin-top: 1.6em;
+      margin-bottom: 0.15em;
+    }
+    .header h2 {
+     font-size: 3.9em;
+     margin-bottom: 2.9em;
     }
 }
 /* ************* End Media Queries ************* */
