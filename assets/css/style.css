@@ -255,12 +255,6 @@ footer p {
     .top-bar {
         overflow-x: hidden;
     }
-    .animated {
-    -webkit-animation-duration: none;
-            animation-duration: none;
-    -webkit-animation-fill-mode: none;
-            animation-fill-mode: none;
-    }
     header h1 {
         font-size: 7em;
         margin-top: 2.2em;
