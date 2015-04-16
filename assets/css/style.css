@@ -85,7 +85,8 @@ margin-top: 17.6vh;
 }
 header h2 {
 font-size: 3.405em;
-padding-bottom: 9vh;
+margin-bottom: 3.3em;
+}
 }
 header .fa {
 font-size: 5.4em;
