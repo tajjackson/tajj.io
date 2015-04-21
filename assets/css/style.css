@@ -13,16 +13,9 @@ Copyright (c) 2015 Daniel Eden
 /* ***************************** END EXTERNAL SHEETS ************************* */
 
 /* *********************************** CUSTOM CSS / Globals ********************************* */
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
 body {
     font-size: 50.5%;
+    overflow-x: hidden !important;
     animation-duration: 1.5s;
 }
 p,
@@ -30,11 +23,13 @@ li,
 h3 {
     font-family: 'Raleway';
 }
+
 h3 {
     font-size: 4.1em;
     letter-spacing: .074em;
     font-weight: bold;
 }
+
 li {
     list-style-type: none;
 }
@@ -262,8 +257,8 @@ footer p {
         overflow-x: hidden;
     }
     .animated {
-     animation-duration: .85s;
-     -webkit-animation-duration: .85s;
+     animation-duration: .6s;
+     -webkit-animation-duration: .6s;
     }
     header h1 {
         font-size: 7em;
