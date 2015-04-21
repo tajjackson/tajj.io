@@ -261,7 +261,7 @@ footer p {
 /* Small Screens */
 @media only screen and (max-width: 40em) {
    .wow {
-       visibility: visible;
+       visibility: visible !important;
     } 
    
     .animated {
