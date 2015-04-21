@@ -260,9 +260,10 @@ footer p {
 
 /* Small Screens */
 @media only screen and (max-width: 40em) {
-    .top-bar {
-        overflow-x: hidden;
-    }
+   .wow {
+       visibility: visible;
+    } 
+   
     .animated {
      animation-duration: .8s;
      -webkit-animation-duration: .8s;
