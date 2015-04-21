@@ -18,11 +18,11 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x:hidden;
 }
 
 body {
     font-size: 50.5%;
-    overflow-x: hidden;
     animation-duration: 1.5s;
 }
 p,
@@ -269,7 +269,7 @@ footer p {
     }
     header h1 {
         font-size: 7em;
-        margin-top: 3em;
+        margin-top: 2.75em;
     }
     header h2 {
         font-size: 3em;
