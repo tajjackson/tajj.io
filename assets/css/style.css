@@ -24,6 +24,7 @@ body {
     font-size: 50.5%;
     animation-duration: 1.5s;
 }
+
 p,
 li,
 h3 {
@@ -49,17 +50,17 @@ h2 {
     font-weight: bold;
 }
 header h1 {
-font-size: 11em;
-margin-top: 2.1em;
-margin-bottom: 0.2em;
+	font-size: 11em;
+	margin-top: 2.1em;
+	margin-bottom: 0.2em;
 }
 header h2 {
-font-size: 3.405em;
-margin-bottom: 3.46em;
+	font-size: 3.405em;
+	margin-bottom: 3.46em;
 }
 
 header .fa {
-font-size: 5.4em;
+	font-size: 5.4em;
 }
 .code {
     font-family: courier;
