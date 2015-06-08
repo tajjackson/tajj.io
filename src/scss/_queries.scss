@@ -1,0 +1,64 @@
+// Small screens
+
+@media only screen and (max-width: 40em) {
+  .animated {animation-duration: .8s;}
+
+  h3 {font-size: 3.8em;}
+
+  header { 
+
+    h1 {
+      font-size: $hs-h1;
+      margin-top: 2.75em;
+    }
+
+    h2 {
+      font-size: $hs-h2;
+      margin-bottom: 2.3em;
+    }
+
+    .fa {
+      font-size: $hs-fa;
+      padding-left: .1em;
+    }
+
+  }
+
+  section {
+    &.bg-exp h2,
+    &.about h2,
+    &.contact h2 {
+      font-size: $ss-h2;
+      letter-spacing: .05em;
+    }
+  }   
+
+}
+
+// Large screens
+
+@media only screen and (min-width: 64.063em) {
+
+  header {
+    h1 {
+      font-size: $hl-h1;
+      margin-bottom: .15em;
+      margin-top: 1.6em;
+    }
+
+    h2 {
+      font-size: $hl-h2;
+      margin-bottom: 2.9em;
+    }
+  }
+
+  section {
+    &.bg-exp h2,
+    &.about h2,
+    &.contact h2 {
+      font-size: $sl-h2;
+      letter-spacing: .09em;
+    }       
+  }
+
+}

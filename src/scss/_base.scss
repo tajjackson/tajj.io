@@ -1,0 +1,54 @@
+// *** Global defaults ***
+
+// Font-families
+$m-font: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$d-font: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$code: courier;
+
+// Font-weight
+$fw: 300;
+$bold: 400;
+
+// Special
+$link-h: rgb(6, 171, 238);
+
+html,
+body {overflow-x: hidden;}
+
+body {
+  animation-duration: 2s;
+  
+  font: { 
+    family: $m-font;
+    size: 16px; 
+  }
+}
+
+h3 {
+  font: {
+    size: 4.1em;
+    weight: $fw;
+  }
+
+  letter-spacing: .074em;
+}
+
+h4 {
+  font: {
+    size: 3em;
+    weight: $fw;
+  }
+}
+
+li {list-style-type: none;}
+
+strong {font-weight: $bold;}
+
+.text-center {text-align: center;}
+
+a {
+  color: rgb(5, 142, 238);
+  text-decoration: none;
+  
+  &:hover {color: $link-h;}
+}

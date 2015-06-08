@@ -1,0 +1,277 @@
+// *** Font-sizes *** 
+
+// Header
+$h-h1:6em;
+$h-h2:2.405em;
+$h-fa:3em;
+// &Small-screen
+$hs-h1:4.8em;
+$hs-h2:1.7em;
+$hs-fa:2.5em;
+// &Large-screen
+$hl-h1:6.6em;
+$hl-h2:2em;
+
+// Sections
+$s-h2:5.25em;
+$s-p:1.4em;
+$sub:2.2em;
+// &Small-screen 
+$ss-h2:4.8em;
+// &Large-screen
+$sl-h2:5.7em;
+
+// Experience
+$b-li:1.5em;
+$b-lead:1.9em;
+
+// Contact
+$c-p:2em;
+$c-h2:5.8em;
+$c-fa:1.3em;
+
+// Footer
+$f-p:1em; 
+
+// *** Colors ***
+
+// Background colors
+$about: #f4f4f4;
+$exp: #ededed;
+$contact: #f7f7f7;
+
+// Font-awesome
+$git: #800080;
+$lin:  #0077b5;
+$tw: #55acee;
+$mail: rgba(255, 255, 255, .79);
+$fa: rgba(0, 0, 0, .81);
+$white: #d9dbd9;
+
+// Awesome.css animation time
+$anim: .6s;
+
+
+// *** Styles ***
+
+header {
+
+  h1 {
+    font: {
+      family: $m-font;
+      size: $h-h1;
+      weight: $fw;
+    }
+
+    margin: {
+      bottom: .2em;
+      top: 2.1em;
+    }
+  }
+
+  h2 {
+    font: {
+      family: $m-font;
+      size: $h-h2;
+      weight: $fw;
+    }
+
+    margin: { bottom: 2.8em; }
+  }
+
+  .fa { font-size: $h-fa; }
+}
+
+
+.code {
+  font: {
+    family: $code;
+    size: .56em;
+  }
+}
+
+.fixed { transform: translateZ(0); }
+
+// Font-Awesome
+
+.fa {
+  color: $fa;
+
+  &-envelope {
+    transition: $anim;
+
+    &:hover {
+      color: $mail;
+      transition: $anim;
+    }
+  }
+
+  &-github-square {
+    transition: $anim;
+
+    &:hover {
+      color: $git;
+      transition: $anim;
+    }
+  }
+
+  &-linkedin-square {
+    transition: $anim;
+
+    &:hover {
+      color: $lin;
+      transition: $anim;
+    }
+  }
+
+  &-twitter-square {
+    transition: $anim;
+
+    &:hover {
+      color: $tw; 
+      transition: $anim;
+    }
+  }
+}
+
+// Section Styles 
+
+section {
+  &.bg-exp {
+    background-color: $exp;
+    height: auto;
+  }
+
+  &.about {
+    background-color: $about;
+    height: auto;
+  }
+
+  &.contact {
+    background-color: $contact;
+    height: auto;
+  }
+}
+
+.bg-exp,
+.about,
+.contact {
+
+  h2 {
+    font: { 
+      family: $m-font;
+      size: $s-h2;
+      weight: $fw;
+    }
+    letter-spacing: .08em;
+  }
+
+  p {
+    font: {
+      size: $s-p;
+      weight: $fw;
+    }
+
+    &.sub-head {
+      font-size: $sub;
+    }
+  }
+}
+
+// Experience Section 
+
+.bg-exp {
+
+  li {
+    font: {
+      size: $b-li;
+      weight: $fw;
+    }
+
+    letter-spacing: .05em;
+  }
+
+  .lead {
+    font: {
+      size: $b-lead;
+      weight: $bold;
+    }
+  }
+
+  h2 { margin-bottom: 0; }
+
+  h3 { 
+    font: {
+      size: 3em;
+    }
+
+    margin: {
+      bottom: .7em;
+    }
+
+  }
+
+  thumb {
+    border: solid 4px $white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+    display: inline-block;
+    line-height: 0;
+    max-width: 100%;
+
+    transition: all 200ms ease-out;
+  }
+
+  .sub-head {
+    margin-bottom: 0;
+  }
+
+}
+
+.exp-p > p {
+  margin-left: 1.2em;
+}
+
+
+.e-stmt {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+// About Section 
+
+.my-pic img {
+  border-radius: 100%;
+  margin-bottom: 1em;
+}
+
+// Contact Section
+
+.contact { 
+
+  h2 {
+    font-size: $c-h2;
+    letter-spacing: .11em;
+    margin-bottom: .25em;
+  }
+
+  p {font-size: $c-p;}
+
+  .fa {
+    font-size: $c-fa;
+    
+    &-envelope:hover {
+      color: $white;
+    }
+  }
+}
+
+// Footer 
+
+footer {
+
+  p {
+    font-family: $d-font;
+    font-size: $f-p;
+    word-spacing: .022em;
+  }
+}
