@@ -5,7 +5,7 @@ $h-h1:6em;
 $h-h2:2.405em;
 $h-fa:3em;
 // &Small-screen
-$hs-h1:4.8em;
+$hs-h1:4.2em;
 $hs-h2:1.7em;
 $hs-fa:2.5em;
 // &Large-screen
@@ -17,7 +17,7 @@ $s-h2:5.25em;
 $s-p:1.4em;
 $sub:2.2em;
 // &Small-screen 
-$ss-h2:4.8em;
+$ss-h2:4.5em;
 // &Large-screen
 $sl-h2:5.7em;
 
@@ -164,6 +164,7 @@ section {
       weight: $fw;
     }
     letter-spacing: .08em;
+    margin-top: .4em;
   }
 
   p {

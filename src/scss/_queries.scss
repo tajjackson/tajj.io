@@ -9,7 +9,7 @@
 
     h1 {
       font-size: $hs-h1;
-      margin-top: 2.75em;
+      margin-top: 2.1em;
     }
 
     h2 {
@@ -19,22 +19,20 @@
 
     .fa {
       font-size: $hs-fa;
-      padding-left: .1em;
     }
 
   }
 
   section {
-    &.bg-exp h2,
     &.about h2,
     &.contact h2 {
       font-size: $ss-h2;
       letter-spacing: .05em;
     }
-  }   
 
+    &.bg-exp h2 {font-size: 3.6em;}
+  }
 }
-
 // Large screens
 
 @media only screen and (min-width: 64.063em) {
