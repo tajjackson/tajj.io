@@ -5,7 +5,7 @@ $h-h1:6em;
 $h-h2:2.405em;
 $h-fa:3em;
 // &Small-screen
-$hs-h1:4.2em;
+$hs-h1:3.7em;
 $hs-h2:1.7em;
 $hs-fa:2.5em;
 // &Large-screen
@@ -63,6 +63,8 @@ header {
       weight: $fw;
     }
 
+    letter-spacing: .05em;
+    
     margin: {
       bottom: .2em;
       top: 2.1em;
@@ -75,7 +77,8 @@ header {
       size: $h-h2;
       weight: $fw;
     }
-
+    
+    letter-spacing: .1em;
     margin: { bottom: 2.8em; }
   }
 

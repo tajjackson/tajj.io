@@ -5118,6 +5118,7 @@ header h1 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 6em;
   font-weight: 300;
+  letter-spacing: .05em;
   margin-bottom: .2em;
   margin-top: 2.1em;
 }
@@ -5125,6 +5126,7 @@ header h2 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 2.405em;
   font-weight: 300;
+  letter-spacing: .1em;
   margin-bottom: 2.8em;
 }
 header .fa {
@@ -5290,8 +5292,8 @@ footer p {
   }
 
   header h1 {
-    font-size: 4.2em;
-    margin-top: 2.1em;
+    font-size: 3.7em;
+    margin-top: 2.3em;
   }
   header h2 {
     font-size: 1.7em;
