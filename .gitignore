@@ -1,5 +1,6 @@
 .sass-cache
+dist
+src/stylesheets
 node_modules
 favicon.ico
-dist/fonts/*
 

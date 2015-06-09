@@ -5120,7 +5120,7 @@ header h1 {
   font-weight: 300;
   letter-spacing: .05em;
   margin-bottom: .2em;
-  margin-top: 2.1em;
+  margin-top: 1.8em;
 }
 header h2 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -5208,7 +5208,7 @@ section.contact {
 .bg-exp p,
 .about p,
 .contact p {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 300;
 }
 .bg-exp p.sub-head,
@@ -5309,6 +5309,9 @@ footer p {
   }
   section.bg-exp h2 {
     font-size: 3.6em;
+  }
+  section.about p {
+    font-size: 1.31em;
   }
 }
 @media only screen and (min-width: 64.063em) {
