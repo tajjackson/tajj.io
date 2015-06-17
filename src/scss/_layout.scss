@@ -55,6 +55,11 @@ $anim: .6s;
 // *** Styles ***
 
 header {
+  
+  background: url('/dist/img/header-min.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 
   h1 {
     font: {
@@ -84,16 +89,6 @@ header {
 
   .fa { font-size: $h-fa; }
 }
-
-
-.code {
-  font: {
-    family: $code;
-    size: .56em;
-  }
-}
-
-.fixed { transform: translateZ(0); }
 
 // Font-Awesome
 
@@ -176,9 +171,7 @@ section {
       weight: $fw;
     }
 
-    &.sub-head {
-      font-size: $sub;
-    }
+    &.sub-head {font-size: $sub;}
   }
 }
 
@@ -205,35 +198,24 @@ section {
   h2 { margin-bottom: 0; }
 
   h3 { 
-    font: {
-      size: 3em;
-    }
-
-    margin: {
-      bottom: .7em;
-    }
-
+    font-size: 3em;
+    margin-bottom: .7em;
   }
 
-  thumb {
+  .thumb {
     border: solid 4px $white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
     display: inline-block;
     line-height: 0;
     max-width: 100%;
-
     transition: all 200ms ease-out;
   }
 
-  .sub-head {
-    margin-bottom: 0;
-  }
+  .sub-head {margin-bottom: 0;}
 
 }
 
-.exp-p > p {
-  margin-left: 1.2em;
-}
+.exp-p > p {margin-left: 1.2em;}
 
 
 .e-stmt {
@@ -274,8 +256,10 @@ section {
 footer {
 
   p {
-    font-family: $d-font;
-    font-size: $f-p;
+    font: { 
+      family: $d-font;
+      size: $f-p; 
+    }
     word-spacing: .022em;
   }
 }
