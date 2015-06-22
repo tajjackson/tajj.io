@@ -34,7 +34,10 @@
 
     &.bg-exp h2 {font-size: 3.6em;}
     &.about p {font-size: 1.31em;}
+
   }
+  
+    p.e-stmt-2 {font-size: 1.4em;}
 }
 // Large screens
 
@@ -49,7 +52,6 @@
 
     h2 {
       font-size: $hl-h2;
-      margin-bottom: 2.9em;
     }
   }
 

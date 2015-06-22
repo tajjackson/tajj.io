@@ -5071,11 +5071,6 @@ th.hide-for-touch {
   animation-name: slideOutUp;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
@@ -5114,12 +5109,6 @@ a:hover {
   color: #06abee;
 }
 
-header {
-  background: url("/dist/img/header-min.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-}
 header h1 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 6em;
@@ -5133,7 +5122,7 @@ header h2 {
   font-size: 2.405em;
   font-weight: 300;
   letter-spacing: .1em;
-  margin-bottom: 2.8em;
+  margin-bottom: 2.6em;
 }
 header .fa {
   font-size: 3em;
@@ -5253,7 +5242,13 @@ section.contact {
 
 .my-pic img {
   border-radius: 100%;
-  margin-bottom: 1em;
+}
+
+.about h2 {
+  margin-bottom: .4em;
+}
+.about .sub-head {
+  margin-bottom: .2em;
 }
 
 .contact h2 {
@@ -5312,6 +5307,10 @@ footer p {
   section.about p {
     font-size: 1.31em;
   }
+
+  p.e-stmt-2 {
+    font-size: 1.4em;
+  }
 }
 @media only screen and (min-width: 64.063em) {
   header h1 {
@@ -5321,7 +5320,6 @@ footer p {
   }
   header h2 {
     font-size: 2em;
-    margin-bottom: 2.9em;
   }
 
   section.bg-exp h2, section.about h2, section.contact h2 {
