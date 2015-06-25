@@ -13,12 +13,10 @@ sticky_class:"sticky",custom_back_text:!0,back_text:"Back",mobile_show_parent_li
 $(document).ready(function() {
 	$(window).scroll(function() {
 
-		if ($(window).scrollTop() > 50) {
+		if ($(window).scrollTop() > 350) {
 			$('header').addClass('scrolled');
-			console.log("added scrolled");
 		} else {
 			$('header').removeClass('scrolled');
-			console.log("Removed scrolled");
 		};
 	});
 });

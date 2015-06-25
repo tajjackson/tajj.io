@@ -83,8 +83,8 @@ header {
   }
 
   &.scrolled {
-    opacity: 0 !important;
-    transition: all 1s ease;
+    opacity: 0;
+    transition: all 1.5s ease;
   }
 
   .fa { font-size: $h-fa; }

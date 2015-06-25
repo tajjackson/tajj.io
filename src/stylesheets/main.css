@@ -5125,9 +5125,9 @@ header h2 {
   margin-bottom: 2.6em;
 }
 header.scrolled {
-  opacity: 0 !important;
-  -webkit-transition: all 1s ease;
-          transition: all 1s ease;
+  opacity: 0;
+  -webkit-transition: all 1.5s ease;
+          transition: all 1.5s ease;
 }
 header .fa {
   font-size: 3em;
