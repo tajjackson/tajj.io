@@ -82,6 +82,11 @@ header {
     margin-bottom: 2.6em; 
   }
 
+  &.scrolled {
+    opacity: 0 !important;
+    transition: all 1s ease;
+  }
+
   .fa { font-size: $h-fa; }
 }
 

@@ -5124,6 +5124,11 @@ header h2 {
   letter-spacing: .1em;
   margin-bottom: 2.6em;
 }
+header.scrolled {
+  opacity: 0 !important;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+}
 header .fa {
   font-size: 3em;
 }
