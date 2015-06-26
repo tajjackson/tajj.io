@@ -15,36 +15,43 @@
         <link rel="stylesheet" href="dist/css/font-awesome.min.css">
         <link rel="stylesheet" href="dist/css/main.min.css">
         <style>.wow {visibility: hidden;}
-        header {background:url('dist/img/header-min.jpg')no-repeat center center fixed;-moz-background-size:cover;-webkit-background-size:cover;background-size:cover;height:100%;}
+        .header-container {background:url('dist/img/header-min.jpg')no-repeat center center fixed;-moz-background-size:cover;-webkit-background-size:cover;background-size:cover;height:100%;}
         </style>
     </head>
     <body>
-        <header id="top">
-            <div class="row">
-                <div class="large-12 large-centered columns text-center">
-                    <h1 class="wow animated fadeInUp" data-wow-delay=".3s">Taj Jackson</h1>
-                    <hr class="wow animated fadeIn" data-wow-delay="2s" style="border-bottom:1px solid black;border-image:none;border-left:0 none;border-right:0 none;border-top:1px solid black;height:0;margin:25px auto;width:7.6em;">
-                    <h2 class="wow animated fadeInUp" data-wow-delay=".9s"><em>Web Developer</em></h2>
+        <div class="header-container">
+            <header id="top">
+                <div class="row">
+                    <div class="large-12 large-centered columns text-center">
+                        <h1 class="wow animated fadeInUp" data-wow-delay=".3s">Taj Jackson</h1>
+                        <hr class="wow animated fadeIn" data-wow-delay="2s" style="border-bottom:1px solid black;border-image:none;border-left:0 none;border-right:0 none;border-top:1px solid black;height:0;margin:25px auto;width:7.6em;">
+                        <h2 class="wow animated fadeInUp" data-wow-delay=".9s"><em>Web Developer</em></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-11 small-offset-1 medium-9 medium-offset-2 large-7 large-offset-3">
+                        <div class="wow animated fadeInUp small-3 columns" data-wow-delay="1.5s">
+                            <a href="mailto:tjackson@tajj.io?subject=Business"><i class="fa fa-envelope" title="Email"></i></a>
+                        </div>
+                        <div class="wow animated fadeInUp small-3 columns" data-wow-delay="1.6s">
+                            <a href="https://github.com/tajjackson" target="_blank" title="Look at my code"><i class="fa fa-github-square"></i></a>
+                        </div>
+                        <div class="wow animated fadeInUp small-3 columns" data-wow-delay="1.7s">
+                            <a href="http://linkedin.com/in/tajjackson" target="_blank" title="Connect"><i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                        <div class="wow animated fadeInUp small-3 columns left" data-wow-delay="1.8s"> <a href="https://twitter.com/Taj_L_Jackson" target="_blank" title="Follow"><i class="fa fa-twitter-square"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="small-11 small-offset-1 medium-9 medium-offset-2 large-7 large-offset-3">
-                    <div class="wow animated fadeInUp small-3 columns" data-wow-delay="1.5s">
-                        <a href="mailto:tjackson@tajj.io?subject=Business"><i class="fa fa-envelope" title="Email"></i></a>
-                    </div>
-                    <div class="wow animated fadeInUp small-3 columns" data-wow-delay="1.6s">
-                        <a href="https://github.com/tajjackson" target="_blank" title="Look at my code"><i class="fa fa-github-square"></i></a>
-                    </div>
-                    <div class="wow animated fadeInUp small-3 columns" data-wow-delay="1.7s">
-                        <a href="http://linkedin.com/in/tajjackson" target="_blank" title="Connect"><i class="fa fa-linkedin-square"></i>
-                        </a>
-                    </div>
-                    <div class="wow animated fadeInUp small-3 columns left" data-wow-delay="1.8s"> <a href="https://twitter.com/Taj_L_Jackson" target="_blank" title="Follow"><i class="fa fa-twitter-square"></i></a>
-                </div>
+            <div class="row" id="scroll">
+                <em class="small-12 columns text-center wow animated fadeInUp" data-wow-delay="3s">Scroll</em>
+                <br />
+                <a href="#about"><i class="fa fa-angle-double-down small-12 columns text-center wow animated fadeInUp" data-wow-delay="3s"></i></a>
             </div>
-        </div>
-    </header>
-    <section class="about">
+        </header>
+    </div>
+    <section class="about" id="about">
         <div class="row">
             <h2 class="text-center">About</h2>
         </div>
@@ -132,6 +139,9 @@
             <p class="small-12 columns text-center"><a href="https://www.codeschool.com/users/Taj_L_Jackson" target="_blank" title="My Code School account">Code School</a></p>
             <p class="small-12 columns text-center"><a href="http://teamtreehouse.com/tajjackson" target="_blank" title="My treehouse account">Treehouse</a></p>
             <p class="small-12 columns text-center"><a href="http://codecademy.com" target="_blank" title="My codecademy account">Codecademy</a></p>
+        </div>
+        <div class="row">
+            <a href="#"><i class="fa fa-chevron-circle-up" id="toTop"></i></a>
         </div>
     </section>
     <footer class="row" style="margin-bottom: 1em;">

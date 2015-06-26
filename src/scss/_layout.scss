@@ -82,9 +82,13 @@ header {
     margin-bottom: 2.6em; 
   }
 
-  &.scrolled {
-    opacity: 0;
-    transition: all 1.5s ease;
+  // &.scrolled {
+  //   opacity: 0;
+  //   transition: opacity 1s ease-in-out;
+  // }
+
+  em {
+    margin-top: 4em;
   }
 
   .fa { font-size: $h-fa; }
@@ -130,6 +134,7 @@ header {
       transition: $anim;
     }
   }
+
 }
 
 // Section Styles 
