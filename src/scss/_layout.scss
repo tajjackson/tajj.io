@@ -56,6 +56,19 @@ $anim: .6s;
 
 header {
 
+  ul {
+    li {
+      display: inline;
+      float: right;
+      list-style: none;
+      padding-left: 1em;
+      text-transform: uppercase;
+    }
+
+    a {color: $black;}
+  }
+  
+
   h1 {
     font: {
       family: $m-font;
@@ -81,11 +94,6 @@ header {
     letter-spacing: .1em;
     margin-bottom: 2.6em; 
   }
-
-  // &.scrolled {
-  //   opacity: 0;
-  //   transition: opacity 1s ease-in-out;
-  // }
 
   em {
     margin-top: 4em;
@@ -134,7 +142,6 @@ header {
       transition: $anim;
     }
   }
-
 }
 
 // Section Styles 
@@ -257,6 +264,17 @@ section {
     
     &-envelope:hover {
       color: $white;
+    }
+
+    &-chevron-circle-up {
+      bottom: 0;
+      color: rgba(0, 0, 0, .80);
+      display: none;
+      font-size: 3em;
+      padding: .75em;
+      position: fixed;
+      right: .25em;
+      text-decoration: none;
     }
   }
 }

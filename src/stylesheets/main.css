@@ -5109,6 +5109,16 @@ a:hover {
   color: #06abee;
 }
 
+header ul li {
+  display: inline;
+  float: right;
+  list-style: none;
+  padding-left: 1em;
+  text-transform: uppercase;
+}
+header ul a {
+  color: #000000;
+}
 header h1 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 6em;
@@ -5267,6 +5277,16 @@ section.contact {
 }
 .contact .fa-envelope:hover {
   color: #d9dbd9;
+}
+.contact .fa-chevron-circle-up {
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.8);
+  display: none;
+  font-size: 3em;
+  padding: .75em;
+  position: fixed;
+  right: .25em;
+  text-decoration: none;
 }
 
 footer p {
